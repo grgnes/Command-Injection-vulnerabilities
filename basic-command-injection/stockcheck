@@ -1,12 +1,12 @@
-#!/bin/bash
+#!/bin/bash   
 
-PRODUCT_ID=$1
-STORE_ID=$2
+PRODUCT_ID=$1   // get the product ID from the first argument
+STORE_ID=$2     // get the product ID from the second argument
 
-if [ "$PRODUCT_ID" = "1" ] && [ "$STORE_ID" = "1" ]; then
+if [ "$PRODUCT_ID" = "1" ] && [ "$STORE_ID" = "1" ]; then   // check if the product ID is 1 and the store ID is 1
     echo "42"
-elif [ "$PRODUCT_ID" = "1" ] && [ "$STORE_ID" = "2" ]; then
-    echo "15"
+elif [ "$PRODUCT_ID" = "1" ] && [ "$STORE_ID" = "2" ]; then   // check if the product ID is 1 and the store ID is 2
+    echo "15"  
 else
     echo "0"
 fi

@@ -6,11 +6,11 @@
 </head>
 <body>
 
-    <h1>Lightweight "l33t" Leather Jacket</h1>
+    <h1>Shop</h1>
 
-    <p>Fiyat: £1337</p>
+    <p>Cost : £1337</p>
 
-    <label for="storeId">Mağaza seç:</label>
+    <label for="storeId">Store:</label>
 
     <select id="storeId">
         <option value="1">London</option>
@@ -18,7 +18,7 @@
         <option value="3">Milan</option>
     </select>
 
-    <button id="checkStock">Stok kontrol et</button>
+    <button id="checkStock">Check Stock</button>
 
     <p id="stockResult"></p>
 

@@ -10,14 +10,14 @@
 
 <form action="ping-lab.php" method="POST">
 
-    <label>IP Adresi</label><br>
+    <label>IP Adress</label><br>
 
     <input type="text" name="ip" value="127.0.0.1">
 
     <br><br>
 
     <button type="submit">
-        Ping At
+        Ping
     </button>
 
 </form>

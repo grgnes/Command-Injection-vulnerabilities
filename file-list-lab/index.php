@@ -2,22 +2,22 @@
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
-    <title>Dosya Listeleme</title>
+    <title>Listing Files</title>
 </head>
 <body>
 
-<h2>Dosya Listeleme</h2>
+<h2>Listing Files</h2>
 
 <form action="list.php" method="POST">
 
-    <label>Klasör Adı:</label>
+    <label>Folder Name:</label>
 
     <input
         type="text"
         name="folder"
     >
     <button type="submit">
-        Listele
+        list
     </button>
 </form>
 </body>

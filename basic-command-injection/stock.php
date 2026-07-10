@@ -5,6 +5,6 @@ $storeId = $_POST['storeId'] ?? '';
 
 $stockcheckPath = __DIR__ . '/stockcheck';
 
-$command = "$stockcheckPath $productId $storeId";
+$command = "$stockcheckPath $productId $storeId";   // contruct the command to check stock
 
 echo shell_exec($command);
