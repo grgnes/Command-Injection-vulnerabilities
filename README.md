@@ -1,46 +1,31 @@
-# What Is Command Injection?
+## What Is Command Injection?
 
-Command injection is a vulnerability that allows an attacker to run commands on the target system.
+Command injection is a vulnerability that allows an attacker to run commands on the target system. This vulnerability happens when user input, such as a URL parameter, is sent directly to the operating system as a command.
 
-This vulnerability happens when user input, such as a URL parameter, is sent directly to the operating system as a command.
+Attackers can use this vulnerability to collect information about the target system, run malicious commands, and take control of the server.
 
-Attackers can use this vulnerability to:
-
-* Collect information about the target system
-* Run malicious commands
-* Take control of the server
-
-## Vulnerable Code Example
+For example:
 
 ```php
 $input = $_GET['x'];
 system($input);
 ```
 
-This backend code gets the `x` parameter from the URL using a GET request and sends its value directly to the `system()` function.
+This backend code gets the `x` parameter from the URL using a GET request and sends its value directly to the `system()` function. The `x` parameter can contain an operating system command.
 
-The `x` parameter can contain an operating system command.
+It looks like this in the URL:
 
-## Example Request
-
-```text
+```powershell
 http://site.com/test.php?x=ls
 ```
 
-In this request, the value of the `x` parameter is:
-
-```text
-ls
-```
-
-The backend processes it like this:
+In the backend code, the value works like this:
 
 ```php
 $input = "ls";
 system($input);
 ```
 
-As a result, the `ls` command is executed on the server.
 
 ## Types of Command Injection
 
