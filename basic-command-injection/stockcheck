@@ -1,0 +1,12 @@
+#!/bin/bash
+
+PRODUCT_ID=$1
+STORE_ID=$2
+
+if [ "$PRODUCT_ID" = "1" ] && [ "$STORE_ID" = "1" ]; then
+    echo "42"
+elif [ "$PRODUCT_ID" = "1" ] && [ "$STORE_ID" = "2" ]; then
+    echo "15"
+else
+    echo "0"
+fi
